@@ -59,5 +59,14 @@
 #### local state management -> useReducer, global state management -> useReducer + useContext
 
 ### Fetching data with useReducer Hook
-####
+#### ---
+
+## useState vs useReducer
+|Scenario|useState|useReducer|
+|--------|--------|----------|
+|Type of state |Number, String, Boolean |Object or Array |
+|Number of state transitions |One or two |Too many |
+|Related state transitions? |No |Yes (use it if state transitions are related) |
+|Business logic |No business logic |Complex business logic |
+|Local vs Global |Local |Global |
 
