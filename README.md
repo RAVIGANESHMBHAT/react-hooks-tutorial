@@ -31,3 +31,9 @@
 #### It the current commit, we had a dependency 'count' in the useEffect. But we couldn't recognize that as a dependency because, we are not using the 'count' directly inside useEffect rather it is a dependency for our tick function. So, each time when we call some function inside useEffect, make sure to use all the dependent parameters of that functions inside the depeendency array of useEffect.
 
 ### Fetching data with useEffect
+
+## useContext Hook
+
+#### Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+#### Note: See the creating of context in Class Component in this (repo)[https://github.com/RAVIGANESHMBHAT/ReactJS-Learnings]
+
