@@ -13,3 +13,7 @@
 * Only call Hooks at the top level
 * Don't call hooks inside conditions, loops or nested functions
 * Only call hooks from React function (Not with regular JavaScript functions)
+
+### Using an object as a state variable in useState hook
+
+#### In clas component, the this.state merges the attributes. Only the modified attribute will be updated and all other attributes in the object would be stayed unchanged. But in useState hook, only the passed attribute in setState() will be changed and other attributes will be lost. So, use spread operator to pass all the remaining attributes into setState method.
