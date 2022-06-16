@@ -5,6 +5,7 @@ import ComponentC from "./components/ComponentC";
 import ComponentD from "./components/ComponentD";
 import ComponentE from "./components/ComponentE";
 import ComponentF from "./components/ComponentF";
+import Counter from "./components/Counter";
 import CounterOne from "./components/CounterOne";
 import CounterThree from "./components/CounterThree";
 import CounterTwo from "./components/CounterTwo";
@@ -76,7 +77,9 @@ function App() {
       {/* <DataFetchingOne /> */}
       {/* <DataFetchingTwo /> */}
 
-      <ParentComponent />
+      {/* <ParentComponent /> */}
+
+      <Counter />
     </div>
   );
 }

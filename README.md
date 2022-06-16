@@ -87,3 +87,7 @@
 #### In the current commit, when we used the 'export default Function_Name' instead of 'export default React.memo(Function_Name)', all the components were getting rendered even if any one button was pressed.Using the React.memo prevented unnecessary rendering up to certain level. But still if 'Increment Age' button was pressed, it was rendering the Increment Salary button along with the 'Age' Count component and 'Increment Age' Button component. It was because, whenever 'age' property has changed in the ParentComponent.js component, the ParentComponent function was rerendered along with creating new references for the existing functions inside that function component(eg: incrementAge(), incrementSalary()). Since rerendering of child components happen after the shallow comparision, when compared the old incrementSalary() function with the new incrementSalary() function, it's reference was different . so, it rerendered the 'Increment Salary' button component as well.(Since the 'salary' attribut value was not changed, it didn't rerender the dependent component, 'Count' of salary).
 
 ### Solution for the above problem is to use useCallback hook.
+
+## useMemo Hook
+
+#### The current commit is before introducing the useMemo hook for the optimization. In current code, the isEven() is a computationally heavt function. When 'Count One' button is pressed, it takes some time to update the result. Even if the isEven() is not added into Count Two button, it also gets lagged when 'Count Two' button is pressed. It is because of rerendering of the Counter component.
