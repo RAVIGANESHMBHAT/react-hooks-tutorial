@@ -29,3 +29,5 @@
 
 ### useEffect with incorrect dependency
 #### It the current commit, we had a dependency 'count' in the useEffect. But we couldn't recognize that as a dependency because, we are not using the 'count' directly inside useEffect rather it is a dependency for our tick function. So, each time when we call some function inside useEffect, make sure to use all the dependent parameters of that functions inside the depeendency array of useEffect.
+
+### Fetching data with useEffect
