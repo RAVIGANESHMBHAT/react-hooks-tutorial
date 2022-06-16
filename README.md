@@ -58,3 +58,6 @@
 
 #### local state management -> useReducer, global state management -> useReducer + useContext
 
+### Fetching data with useReducer Hook
+####
+
