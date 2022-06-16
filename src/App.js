@@ -19,6 +19,7 @@ import HookCounterTwo from "./components/HookCounterTwo";
 import HookMouse from "./components/HookMouse";
 import IntervalHookCounter from "./components/IntervalHookCounter";
 import MouseContainer from "./components/MouseContainer";
+import ParentComponent from "./components/ParentComponent";
 
 const UserContext = React.createContext();
 const ChannelContext = React.createContext();
@@ -73,7 +74,9 @@ function App() {
       </CountContext.Provider> */}
 
       {/* <DataFetchingOne /> */}
-      <DataFetchingTwo />
+      {/* <DataFetchingTwo /> */}
+
+      <ParentComponent />
     </div>
   );
 }

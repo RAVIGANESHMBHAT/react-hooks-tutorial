@@ -56,7 +56,7 @@
 
 ## useReducer with useContext
 
-#### local state management -> useReducer, global state management -> useReducer + useContext
+#### local state management -> useReducer | global state management -> useReducer + useContext
 
 ### Fetching data with useReducer Hook
 #### ---
@@ -69,4 +69,10 @@
 |Related state transitions? |No |Yes (use it if state transitions are related) |
 |Business logic |No business logic |Complex business logic |
 |Local vs Global |Local |Global |
+
+## useCallback Hook
+
+#### useCallback is a hook that will return a memoized version of the callback function that only changes if one of the dependencies has changed.
+
+## In the current commit, when we used the 'export default FunctionName' instead of 'export default React.memo(FunctionName)', all the components wre getting rendered even if any one button was pressed.Using the React.memo prevented unnecessary rendering up to certain level. But still if Increment Age button was pressed, it was rendering the Increment Salary button along with the 'Age' Count component and 'Increment Age' Button component. it was because, whenever 'age' property has changed in the ParentComponent.js component, the ParentComponent function was rebinding all the menthods inside that function(eg: incrementAge(), incrementSalary()). Since these two methods are rebinded, corresponding attributes such as 'age' and 'salary' got updated. So, the corresponding 'Increment Salary' Button component also re-rendered when the 'Increment Age' button was pressed.
 
