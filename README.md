@@ -54,4 +54,7 @@
 
 #### --
 
+## useReducer with useContext
+
+#### local state management -> useReducer, global state management -> useReducer + useContext
 
