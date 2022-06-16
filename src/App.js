@@ -3,6 +3,7 @@ import "./App.css";
 import ClassCounter from "./components/ClassCounter";
 import ComponentC from "./components/ComponentC";
 import CounterOne from "./components/CounterOne";
+import CounterThree from "./components/CounterThree";
 import CounterTwo from "./components/CounterTwo";
 import DataFetching from "./components/DataFetching";
 import HookCounter from "./components/HookCounter";
@@ -36,7 +37,8 @@ function App() {
         </ChannelContext.Provider>
       </UserContext.Provider> */}
       {/* <CounterOne /> */}
-      <CounterTwo />
+      {/* <CounterTwo /> */}
+      <CounterThree />
     </div>
   );
 }
