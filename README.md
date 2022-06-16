@@ -91,3 +91,4 @@
 ## useMemo Hook
 
 #### The current commit is before introducing the useMemo hook for the optimization. In current code, the isEven() is a computationally heavt function. When 'Count One' button is pressed, it takes some time to update the result. Even if the isEven() is not added into Count Two button, it also gets lagged when 'Count Two' button is pressed. It is because of rerendering of the Counter component.
+#### useCallback caches the provided function instance itself , but useMemo invokes the provided function and caches it's result. if we want to cache a function, then use useCallback. if we want to cache the result, then use useMemo.
