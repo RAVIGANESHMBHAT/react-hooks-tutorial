@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import ClassCounter from "./components/ClassCounter";
 import ComponentC from "./components/ComponentC";
+import CounterOne from "./components/CounterOne";
 import DataFetching from "./components/DataFetching";
 import HookCounter from "./components/HookCounter";
 import HookCounterFour from "./components/HookCounterFour";
@@ -28,11 +29,12 @@ function App() {
       {/* <MouseContainer /> */}
       {/* <IntervalHookCounter /> */}
       {/* <DataFetching /> */}
-      <UserContext.Provider value="Ravi">
+      {/* <UserContext.Provider value="Ravi">
         <ChannelContext.Provider value="My Channel">
           <ComponentC />
         </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
+      <CounterOne />
     </div>
   );
 }

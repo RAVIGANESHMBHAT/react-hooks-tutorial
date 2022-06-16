@@ -37,3 +37,13 @@
 #### Context provides a way to pass data through the component tree without having to pass props down manually at every level.
 #### Note: See the creating of context in Class Component in this (repo)[https://github.com/RAVIGANESHMBHAT/ReactJS-Learnings]
 
+## useReducer Hook
+
+#### A hook used for state management. It is an alternative to useState. The useState is built by using useReducer.
+|   reduce in JavaScript             |      useReduce in React            |
+|------------------------------------|------------------------------------|
+| array.reduce(reducer, initialValue)| useReducer(reducer, initialState)  |
+|singleValue=reducer(accumulator, itemValue) |  newState=reducer(currentState, action) |
+|reduce method returns a single value| useReducer returns a pair of values. [newState, dispatch]|
+
+#### Simple way for using useReducer is, the useReducer takes 2 parameters. One is the reducer function and the other one is initial state. The reducer function takes two parameters, the current state and the action and it returns the new state. The useReducer hook returns the state property( in current commit, it is 'count') and the dispatcher. We can use the dispatcher with appropriate actions as parameter to do the tasks.
