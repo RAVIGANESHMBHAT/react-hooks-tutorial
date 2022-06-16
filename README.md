@@ -23,3 +23,6 @@
 #### It is a close replacement (in Functional components) for the class component lifecycle methods such as componentDidMount, componentDidUpdate and componentWillUnmount
 #### useEffect takse first parameter as a function to execute and the second parameter is an array to mention the parameters to keep track of so that change in value of that parameter will execute the useEffect function.
 #### To execute the useEffect only once (mimic of componentDidMount in Class component), we need to pass an empty array as second parameter
+
+### Mimic the componentWillUnmount in Functional Component
+#### In the current Commit example, even if the Component was destroyed, the mousemove event was still attached. To remove that event do, the first parameter passed to useEffect is a function and it will return another function which will be executed when the component gets unmounted.
