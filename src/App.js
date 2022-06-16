@@ -6,6 +6,7 @@ import HookCounterOne from "./components/HookCounterOne";
 import HookCounterThree from "./components/HookCounterThree";
 import HookCounterTwo from "./components/HookCounterTwo";
 import HookMouse from "./components/HookMouse";
+import IntervalHookCounter from "./components/IntervalHookCounter";
 import MouseContainer from "./components/MouseContainer";
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
       {/* <HookCounterFour /> */}
       {/* <HookCounterOne /> */}
       {/* <HookMouse /> */}
-      <MouseContainer />
+      {/* <MouseContainer /> */}
+      <IntervalHookCounter />
     </div>
   );
 }
